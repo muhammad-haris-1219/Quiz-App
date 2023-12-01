@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;padding: 0;margin: 0;font-family: Arial, Helvetica, sans-serif;
+}
+#container{
+    width: 100%;height: 100vh; padding: 1%;
+}
+#quiz_container{
+    width: 100%; height:100%;background: whitesmoke;box-shadow: 0 0 5px 10px #e8d8ff; 
+}
+#quiz_container1{
+    width: 100%;  height: 60%;display: flex;flex-direction: column;align-items: center;
+}
+ #sub_container1{
+    background: #a560db; display: flex ;align-items: center;flex-direction: column;justify-content: space-between;
+    width: 100%;  height: 90%;border-radius: 0% 0% 10% 10%;   padding: 0 0 20% 0;
+} 
+#result_container1{
+    display: flex;align-items: center;justify-content: center;text-align: center;overflow: auto;width: 100%; height: 50px;
+    font-size: x-large;font-weight:bolder; box-shadow: 0 0 10px 2px #b773ec inset;
+   color:#a560db;background: linear-gradient(to right,transparent, white,transparent);
+} 
+#result_container2{
+    width:100px;height: 100px;border-radius: 50%; background: white;text-shadow: 0 0 5px #b773ec;
+    box-shadow: 0px 0px 2px 5px #cba5ea, 0px 0px 2px 15px #bb86e4,0px 0px 10px 2px #a560db inset;
+    display: flex;align-items: center;justify-content: center;font-size:xx-large;font-weight: bolder;  color: #9d55d5;
+} 
+#moveon{
+    display: none;
+    transform: translate(0,20%);
+    width: 20%;height: auto;transition: all .01s ease-in-out .02s; border-radius: 25px;border:none;outline: none;border:3px double white; 
+    background: #9d55d5;font-size: large;transition: all 0.1s ease .01s;color:white;
+}
+#moveon:active{
+    width:30%;border:3px solid #9d55d5; background: white;font-weight: bolder;color:#9d55d5;
+}
+#sub_container2{
+    width: 90%;height: 40%;background: white;border-radius:20px; box-shadow:2px 0px 20px  #b773ec;
+transform: translate(0%,-25%);display: grid;grid-template-columns: repeat(3,1fr);grid-gap: 2%;
+
+}
+#sub1{
+    display: flex;align-items: center;justify-content: space-between;padding: 10% 2% 0 2%; flex-direction: row-reverse;
+}
+#sub1 span:nth-child(2){
+background: #62b18c; width: 0%;border-radius: 10px;height: 10%;
+}
+#sub2 {
+    display: flex;align-items: center;flex-direction: column;justify-content: space-between;padding: 10% 0 2% 0 ;
+}
+#timer{
+   width: 100%;border: 3px double #b367ee;border-radius: 15px;text-align: center;padding: auto;
+}
+
+#counter{
+   color:#9d55d5;font-size:x-large;
+}
+#sub3{
+    padding: 10% 2% 0 2%; display: flex;align-items: center;flex-direction: reverse;justify-content: space-between; 
+}
+#sub3 span:nth-child(2){
+    background: #ff6d6d; width: 0%;border-radius: 10px;height: 10%;
+    }
+#sub4{
+    grid-column: 1/4;overflow: auto;font-size: x-large;font-weight:bolder;
+    display: flex;align-items: center;justify-content: center;padding: 0 2% 0 2%;
+}
+#quiz_container2{
+    width: 100%;height: 40%; display: grid;grid-template-columns:1fr;  grid-gap: 2%;grid-template-rows: repeat(4,1fr),40%;
+
+}
+.options{
+    background: white;padding: 2% 5%;margin: 0 5% 0 5%;overflow: auto;
+    display: flex;align-items: center;justify-content: space-between;
+ border-radius: 20px;border: 3px double #9d55d5;
+}
+.options:hover{
+    background: #b978eb;color: white;cursor: pointer;
+}
+#quiz_container2 span:nth-child(5){
+    display: flex;align-items: center;justify-content: center;background: none; border: none;outline: none;
+}
+#btn{
+    width: 40%;height: 100%;transition: all .01s ease-in-out .02s; border-radius: 25px;outline: none;border:3px double white; 
+    background: #9d55d5;font-size: large;transition: all 0.2s ease .04s;color:white;cursor: pointer;
+}
+#btn:active{
+    width: 60%;border:3px solid #9d55d5; background: white;font-weight: bolder;color:#9d55d5;
+}
+
+
+/* Responsiveness */
+
+@media all and (min-width:767px){
+    #container{
+        padding: 0;
+    }
+    #quiz_container{
+       box-shadow:none;
+    }
+    #quiz_container1{
+ height: 55%;
+    }
+    /* #result_container2{
+        display: none;
+    } */
+    #sub_container1{
+        padding: 3% 0 2% 0;
+    }
+    #sub_container2{
+        position: absolute;height:35%; transform: translate(0%,50%);
+    }
+    #quiz_container2{
+      height: 45%; grid-template-columns:repeat(2,1fr);  grid-gap: 0;
+    }
+    .options{
+        margin: 1% 2% 1% 2%;border-radius: 25px;
+    }
+    #quiz_container2 span:nth-child(5){
+        grid-column:1/3; 
+    }
+    #btn{
+        width: 30%; ;border:5px double white; 
+    }
+    #btn:active{
+        width: 50%;border:5px solid #9d55d5; 
+    }
+ 
+   
+}

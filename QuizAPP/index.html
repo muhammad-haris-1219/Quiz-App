@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>QuizApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+
+        <div id="quiz_container">
+
+            <div id="quiz_container1">
+                <div id="sub_container1">
+                    <span id="result_container1"> Welcome TO USER</span>
+                    <div id="result_container2"> % </div>
+                    <button onclick="moveOn()" id="moveon">Click</button>
+                </div>
+
+               <div id="sub_container2" class="interface">
+                    <div id="sub1">
+                        <span id="pass"></span>
+                        <span class="field"></span>
+                    </div>
+                    <div id="sub2">
+                        <div id="timer">00 </div>
+                        <div id="counter">counter</div>
+                    </div>
+                    <div id="sub3">
+                        <span id="fail"></span>
+                        <span class="field"></span>
+                    </div>
+                    <div id="sub4"> Q# <span id="ques">ques</span></div>
+                </div>
+            </div>
+
+            <div id="quiz_container2" class="interface">
+                <span class="options">
+                    <label class="opt" for="opt1">abc</label><input onclick="quizQuestion()" id="opt1"
+                        onclcik="checkedBtn()" type="radio" name="option">
+                </span>
+                <span class="options">
+                    <label class="opt" for="opt2">abc</label><input onclick="quizQuestion()" id="opt2"
+                        onclcik="checkedBtn()" type="radio" name="option">
+                </span>
+                <span class="options">
+                    <label class="opt" for="opt3">abc</label><input onclick="quizQuestion()" id="opt3"
+                        onclcik="checkedBtn()" type="radio" name="option">
+                </span>
+                <span class="options">
+                    <label class="opt" for="opt4">abc</label><input onclick="quizQuestion()" id="opt4"
+                        onclcik="checkedBtn()" type="radio" name="option">
+                </span>
+                <span class="options">
+                    <button id="btn" disabled onclick="nextQuestion()">Next</button>
+                </span>
+            </div> 
+
+
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
